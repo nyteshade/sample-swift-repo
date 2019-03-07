@@ -14,6 +14,13 @@
 		01214ED92230E1E70026AD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01214ED72230E1E70026AD36 /* LaunchScreen.storyboard */; };
 		01214EE42230E1E70026AD36 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01214EE32230E1E70026AD36 /* SampleTests.swift */; };
 		01214EEF2230E1E70026AD36 /* SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01214EEE2230E1E70026AD36 /* SampleUITests.swift */; };
+		01214F0A2230E2220026AD36 /* MyFuncsAndLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */; };
+		01214F112230E2220026AD36 /* MyFuncsAndLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01214F102230E2220026AD36 /* MyFuncsAndLibsTests.swift */; };
+		01214F132230E2220026AD36 /* MyFuncsAndLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = 01214F032230E2220026AD36 /* MyFuncsAndLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01214F162230E2220026AD36 /* MyFuncsAndLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */; };
+		01214F172230E2220026AD36 /* MyFuncsAndLibs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01214F202230E2540026AD36 /* SomeLibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01214F1F2230E2540026AD36 /* SomeLibs.swift */; };
+		01214F222230E9E80026AD36 /* SemVer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01214F212230E9E80026AD36 /* SemVer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +38,42 @@
 			remoteGlobalIDString = 01214ECA2230E1E30026AD36;
 			remoteInfo = Sample;
 		};
+		01214F0B2230E2220026AD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01214EC32230E1E30026AD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01214F002230E2220026AD36;
+			remoteInfo = MyFuncsAndLibs;
+		};
+		01214F0D2230E2220026AD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01214EC32230E1E30026AD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01214ECA2230E1E30026AD36;
+			remoteInfo = Sample;
+		};
+		01214F142230E2220026AD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01214EC32230E1E30026AD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01214F002230E2220026AD36;
+			remoteInfo = MyFuncsAndLibs;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01214F1B2230E2220026AD36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01214F172230E2220026AD36 /* MyFuncsAndLibs.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01214ECB2230E1E30026AD36 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +89,14 @@
 		01214EEA2230E1E70026AD36 /* SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01214EEE2230E1E70026AD36 /* SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUITests.swift; sourceTree = "<group>"; };
 		01214EF02230E1E70026AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFuncsAndLibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01214F032230E2220026AD36 /* MyFuncsAndLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFuncsAndLibs.h; sourceTree = "<group>"; };
+		01214F042230E2220026AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01214F092230E2220026AD36 /* MyFuncsAndLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFuncsAndLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01214F102230E2220026AD36 /* MyFuncsAndLibsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFuncsAndLibsTests.swift; sourceTree = "<group>"; };
+		01214F122230E2220026AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01214F1F2230E2540026AD36 /* SomeLibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeLibs.swift; sourceTree = "<group>"; };
+		01214F212230E9E80026AD36 /* SemVer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemVer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01214F162230E2220026AD36 /* MyFuncsAndLibs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +122,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01214EFE2230E2220026AD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01214F062230E2220026AD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01214F0A2230E2220026AD36 /* MyFuncsAndLibs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +146,8 @@
 				01214ECD2230E1E30026AD36 /* Sample */,
 				01214EE22230E1E70026AD36 /* SampleTests */,
 				01214EED2230E1E70026AD36 /* SampleUITests */,
+				01214F022230E2220026AD36 /* MyFuncsAndLibs */,
+				01214F0F2230E2220026AD36 /* MyFuncsAndLibsTests */,
 				01214ECC2230E1E30026AD36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				01214ECB2230E1E30026AD36 /* Sample.app */,
 				01214EDF2230E1E70026AD36 /* SampleTests.xctest */,
 				01214EEA2230E1E70026AD36 /* SampleUITests.xctest */,
+				01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */,
+				01214F092230E2220026AD36 /* MyFuncsAndLibsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +195,38 @@
 			path = SampleUITests;
 			sourceTree = "<group>";
 		};
+		01214F022230E2220026AD36 /* MyFuncsAndLibs */ = {
+			isa = PBXGroup;
+			children = (
+				01214F032230E2220026AD36 /* MyFuncsAndLibs.h */,
+				01214F042230E2220026AD36 /* Info.plist */,
+				01214F1F2230E2540026AD36 /* SomeLibs.swift */,
+				01214F212230E9E80026AD36 /* SemVer.swift */,
+			);
+			path = MyFuncsAndLibs;
+			sourceTree = "<group>";
+		};
+		01214F0F2230E2220026AD36 /* MyFuncsAndLibsTests */ = {
+			isa = PBXGroup;
+			children = (
+				01214F102230E2220026AD36 /* MyFuncsAndLibsTests.swift */,
+				01214F122230E2220026AD36 /* Info.plist */,
+			);
+			path = MyFuncsAndLibsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01214EFC2230E2220026AD36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01214F132230E2220026AD36 /* MyFuncsAndLibs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		01214ECA2230E1E30026AD36 /* Sample */ = {
@@ -135,10 +236,12 @@
 				01214EC72230E1E30026AD36 /* Sources */,
 				01214EC82230E1E30026AD36 /* Frameworks */,
 				01214EC92230E1E30026AD36 /* Resources */,
+				01214F1B2230E2220026AD36 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01214F152230E2220026AD36 /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
@@ -181,6 +284,43 @@
 			productReference = 01214EEA2230E1E70026AD36 /* SampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		01214F002230E2220026AD36 /* MyFuncsAndLibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01214F182230E2220026AD36 /* Build configuration list for PBXNativeTarget "MyFuncsAndLibs" */;
+			buildPhases = (
+				01214EFC2230E2220026AD36 /* Headers */,
+				01214EFD2230E2220026AD36 /* Sources */,
+				01214EFE2230E2220026AD36 /* Frameworks */,
+				01214EFF2230E2220026AD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFuncsAndLibs;
+			productName = MyFuncsAndLibs;
+			productReference = 01214F012230E2220026AD36 /* MyFuncsAndLibs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		01214F082230E2220026AD36 /* MyFuncsAndLibsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01214F1C2230E2220026AD36 /* Build configuration list for PBXNativeTarget "MyFuncsAndLibsTests" */;
+			buildPhases = (
+				01214F052230E2220026AD36 /* Sources */,
+				01214F062230E2220026AD36 /* Frameworks */,
+				01214F072230E2220026AD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01214F0C2230E2220026AD36 /* PBXTargetDependency */,
+				01214F0E2230E2220026AD36 /* PBXTargetDependency */,
+			);
+			name = MyFuncsAndLibsTests;
+			productName = MyFuncsAndLibsTests;
+			productReference = 01214F092230E2220026AD36 /* MyFuncsAndLibsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +342,14 @@
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 01214ECA2230E1E30026AD36;
 					};
+					01214F002230E2220026AD36 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					01214F082230E2220026AD36 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 01214ECA2230E1E30026AD36;
+					};
 				};
 			};
 			buildConfigurationList = 01214EC62230E1E30026AD36 /* Build configuration list for PBXProject "Sample" */;
@@ -220,6 +368,8 @@
 				01214ECA2230E1E30026AD36 /* Sample */,
 				01214EDE2230E1E70026AD36 /* SampleTests */,
 				01214EE92230E1E70026AD36 /* SampleUITests */,
+				01214F002230E2220026AD36 /* MyFuncsAndLibs */,
+				01214F082230E2220026AD36 /* MyFuncsAndLibsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +393,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		01214EE82230E1E70026AD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01214EFF2230E2220026AD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01214F072230E2220026AD36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +441,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		01214EFD2230E2220026AD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01214F202230E2540026AD36 /* SomeLibs.swift in Sources */,
+				01214F222230E9E80026AD36 /* SemVer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01214F052230E2220026AD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01214F112230E2220026AD36 /* MyFuncsAndLibsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +470,21 @@
 			isa = PBXTargetDependency;
 			target = 01214ECA2230E1E30026AD36 /* Sample */;
 			targetProxy = 01214EEB2230E1E70026AD36 /* PBXContainerItemProxy */;
+		};
+		01214F0C2230E2220026AD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01214F002230E2220026AD36 /* MyFuncsAndLibs */;
+			targetProxy = 01214F0B2230E2220026AD36 /* PBXContainerItemProxy */;
+		};
+		01214F0E2230E2220026AD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01214ECA2230E1E30026AD36 /* Sample */;
+			targetProxy = 01214F0D2230E2220026AD36 /* PBXContainerItemProxy */;
+		};
+		01214F152230E2220026AD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01214F002230E2220026AD36 /* MyFuncsAndLibs */;
+			targetProxy = 01214F142230E2220026AD36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +627,7 @@
 		01214EF42230E1E70026AD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sample/Info.plist;
@@ -448,6 +645,7 @@
 		01214EF52230E1E70026AD36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Sample/Info.plist;
@@ -540,6 +738,101 @@
 			};
 			name = Release;
 		};
+		01214F192230E2220026AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyFuncsAndLibs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyteshade.MyFuncsAndLibs;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		01214F1A2230E2220026AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MyFuncsAndLibs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyteshade.MyFuncsAndLibs;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		01214F1D2230E2220026AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFuncsAndLibsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyteshade.MyFuncsAndLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
+			};
+			name = Debug;
+		};
+		01214F1E2230E2220026AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyFuncsAndLibsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyteshade.MyFuncsAndLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +868,24 @@
 			buildConfigurations = (
 				01214EFA2230E1E70026AD36 /* Debug */,
 				01214EFB2230E1E70026AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01214F182230E2220026AD36 /* Build configuration list for PBXNativeTarget "MyFuncsAndLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01214F192230E2220026AD36 /* Debug */,
+				01214F1A2230E2220026AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01214F1C2230E2220026AD36 /* Build configuration list for PBXNativeTarget "MyFuncsAndLibsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01214F1D2230E2220026AD36 /* Debug */,
+				01214F1E2230E2220026AD36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
